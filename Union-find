@@ -25,3 +25,6 @@ class UnionFind:
     # 同じ集合に属するか判定
     def same_check(self, x, y):
         return self.find(x) == self.find(y)
+    def count(self, x):#要素の個数
+        return (-1)*self.root[self.find(x)]
+        
